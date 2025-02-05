@@ -1,0 +1,9 @@
+services:
+  decal-checkin-server:
+    build: .
+    ports:
+      - "16000:80"
+    volumes:
+      - ./attendance:/server/attendance
+volumes:
+  attendance:
